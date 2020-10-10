@@ -1,2 +1,0 @@
-# jwt
-Authentication with JWT
