@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Sonchaegeon/study-jwt#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.11.11",
