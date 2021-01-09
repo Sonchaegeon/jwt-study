@@ -12,7 +12,10 @@ export const signup = async (req: Request, res: Response) => {
     });
     const savedUser = await user.save();
 
-    res.send('signup');
+    // Token
+    const token: string = jwt.sign({_id: savedUser._id}, process.env.JWT_SECRET || 'tokensecret');
+
+    res.header('auth-token', token).json(savedUser);
 };
 
 export const signin = (req: Request, res: Response) => {
